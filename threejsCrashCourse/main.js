@@ -3,6 +3,7 @@ import gsap from "gsap";
 import "./style.css";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { sphereMesh } from "./threeComponents/actors/sphere";
+import { mainLight } from "./threeComponents/lights/mainLight";
 
 // Scene
 const scene = new THREE.Scene();
@@ -17,9 +18,8 @@ const sizes = {
 };
 
 // Light
-const light = new THREE.PointLight(0xffffff, 125, 100);
-light.position.set(10, 10, 10);
-scene.add(light);
+
+scene.add(mainLight);
 
 // Camera
 const camera = new THREE.PerspectiveCamera(
