@@ -21,9 +21,9 @@ html {
 
 nav {
   color: white;
-  z-index: 2;
   position: relative;
-  padding: 2rem 8rem;
+  z-index: 2;
+  padding: 2rem 4rem;
   display: flex;
   justify-content: space-between;
 }
@@ -49,4 +49,11 @@ nav ul {
   left: 50%;
   top: 75%;
   transform: translate(-50%, -75%);
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  nav {
+    padding: 2rem 20rem;
+  }
 }
